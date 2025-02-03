@@ -7,13 +7,15 @@ import Summary from "../components/Summary";
 
 export default function Profile() {
   return (
-   <div className="mx-12 my-4">
+   <div className="mx-12 my-6">
+       <div className="text-3xl font-bold">Ashok Basnet</div>
+       <div className="italic">Gwarko, Lalitpur, Nepal.</div>
      <div className="flex space-x-8">
      <div className="flex-3">
       <Summary />
       <Skills />
       </div>
-      <div className="flex-1">
+      <div className="flex-1 mt-10">
         <ProfileImage />
       </div>
     </div>
