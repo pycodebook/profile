@@ -31,7 +31,7 @@ export default function Extracurricular(){
             <Heading title='Extracurricular Activities & Volunteering' />
             {volunteerExperience.map(({title,role, responsibilities}, index) =>{
               return(
-                <>
+                <div key={index}>
                 <div className="my-3">
                      <div className="font-bold">
                         {title}
@@ -42,16 +42,16 @@ export default function Extracurricular(){
                  </div>
                 
                     <ul className="ml-8 text-base">
-                    {responsibilities.map((item)=>{
+                    {responsibilities.map((item, index)=>{
                         return(
-                            <li className="list-disc">
+                            <li className="list-disc" key={index}>
                             {item}
                             </li>
                         )
                     })}
                     </ul>
                 
-                </>
+                </div>
               )
                 
             })}

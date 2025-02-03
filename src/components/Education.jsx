@@ -22,7 +22,7 @@ export default function Education(){
             <Heading title='Education' />
             {education.map(({institution,location, degree, years}, index) =>{
               return(
-                <>
+                <div key={index}>
                 <div className="my-3">
                      <div className="flex justify-between font-bold">
                         <span>{institution}</span>
@@ -34,7 +34,7 @@ export default function Education(){
                      </div>
                  </div>
                 
-                </>
+                </div>
               )
                 
             })}

@@ -52,7 +52,7 @@ export default function Experience(){
             <Heading title='Professional Experience'/>
             {experienceData.map(({company,location, role, duration, responsibilities}, index) =>{
               return(
-                <>
+                <div key={index}>
                 <div className="my-3">
                      <div className="flex justify-between font-bold">
                         <span>{company}</span>
@@ -65,16 +65,16 @@ export default function Experience(){
                  </div>
                 
                     <ul className="ml-8 text-base">
-                    {responsibilities.map((item)=>{
+                    {responsibilities.map((item, index)=>{
                         return(
-                            <li className="list-disc">
+                            <li className="list-disc" key={index}>
                             {item}
                             </li>
                         )
                     })}
                     </ul>
                 
-                </>
+                </div>
               )
                 
             })}
