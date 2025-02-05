@@ -1,17 +1,12 @@
+import { Link } from "react-router-dom";
+import NavItem from "./commons/NavItem";
+
 export default function Navbar() {
   return (
-    <nav className="bg-gray-100 p-4">
-      <ul className="flex items-center justify-center gap-x-14 text-sm font-medium">
-        <li className="cursor-pointer border-b-2 border-transparent transition-all hover:border-blue-500">
-          Profile
-        </li>
-        <li className="cursor-pointer border-b-2 border-transparent transition-all hover:border-blue-500">
-          Blogs
-        </li>
-        <li className="cursor-pointer border-b-2 border-transparent transition-all hover:border-blue-500">
-          Research & Projects
-        </li>
-      </ul>
+    <nav className="flex items-center justify-center gap-x-14 bg-gray-100 p-4 text-sm font-medium">
+      <NavItem to="/profile">Profile</NavItem>
+      <NavItem to="/blogs">Blogs</NavItem>
+      <NavItem to="/research-project"> Research & Projects</NavItem>
     </nav>
   );
 }

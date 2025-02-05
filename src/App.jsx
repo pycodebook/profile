@@ -1,16 +1,10 @@
-import "./App.css";
-import Navbar from "./components/Navbar";
-import Profile from "./pages/profile";
+import { RouterProvider } from "react-router-dom";
+import router from "./routes";
 
-function App() {
-  return (
-   <>
-     <Navbar />
-    <div className="mx-5">
-      <Profile />
-    </div>
-   </>
-  );
+const App = () => {
+  return(
+    <RouterProvider router={router} />
+  )
 }
 
 export default App;
