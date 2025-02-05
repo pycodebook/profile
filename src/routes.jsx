@@ -3,6 +3,7 @@ import Profile from "./pages/Profile";
 import Blogs from "./pages/Blogs";
 import ResearchProject from "./pages/ResearchProject";
 import RootLayout from "./layouts/RootLayout";
+import BlogDetails from "./pages/Blogs/BlogDetails";
 
 const routes = [
   {
@@ -20,6 +21,10 @@ const routes = [
       {
         path: "/blogs",
         element: <Blogs />,
+      },
+      {
+        path:"blogs/:id",
+        element: <BlogDetails />,
       },
       {
         path: "/research-project",

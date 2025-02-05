@@ -5,7 +5,9 @@ export default function RootLayout() {
     return(
         <>
             <Navbar />
-            <Outlet />
+           <div className="my-4 mx-6 md:my-6 md:mx-16">
+           <Outlet />
+           </div>
         </>
     )
 }
