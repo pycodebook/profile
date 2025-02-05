@@ -1,9 +1,8 @@
-import { Link } from "react-router-dom";
 import NavItem from "./commons/NavItem";
 
 export default function Navbar() {
   return (
-    <nav className="flex items-center justify-center gap-x-14 bg-gray-100 p-4 text-sm font-medium">
+    <nav className="flex items-center justify-center gap-x-14 bg-gray-100 py-4 text-sm font-medium">
       <NavItem to="/profile">Profile</NavItem>
       <NavItem to="/blogs">Blogs</NavItem>
       <NavItem to="/research-project"> Research & Projects</NavItem>

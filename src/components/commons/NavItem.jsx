@@ -1,12 +1,14 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-export default function NavItem({to, children}) {
+export default function NavItem({ to, children }) {
   return (
-    <Link
+    <NavLink
       to={to}
-      className="cursor-pointer border-b-2 border-transparent transition-all hover:border-blue-500"
+      className={({ isActive }) =>
+        `cursor-pointer border-b-2 transition-all py-0.5 ${isActive ? "border-blue-500" : "border-transparent hover:border-blue-500"}`
+      }
     >
       {children}
-    </Link>
+    </NavLink>
   );
 }
