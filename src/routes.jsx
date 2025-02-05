@@ -12,7 +12,7 @@ const routes = [
     children: [
       {
         path: "/",
-        element: <Navigate to="/profile" replace />,
+        element: <Navigate to="/blogs" replace />,
       },
       {
         path: "/profile",
