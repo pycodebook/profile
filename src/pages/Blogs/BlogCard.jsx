@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function BlogCard({ id, title, author, imageUrl, category, body }) {
   return (
-    <div className="mb-6 md:mx-4 md:my-0 md:flex-1">
+    <div className="mb-6 md:mx-4 md:my-0">
       <Link to={`/blogs/${id}`} className="block">
         <img src={imageUrl} alt={title} className="w-auto md:h-70" />
         <div className="mx-4 mt-2 font-normal">
